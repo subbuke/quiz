@@ -4,23 +4,28 @@ import React, { useState } from 'react';
 const questions = [
   {
     question: "1.Which country has the highest natural resources?",
-    options: ["Berlin", "Madrid", "Paris", "Lisbon"],
-    answer: "Paris"
+    options: ["India", "Russia", "America", "China"],
+    answer: "Russia"
   },
   {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Mars", "Jupiter", "Saturn"],
-    answer: "Mars"
+    question: "2.Which company doesn't belongs to Elon mask",
+    options: ["Tesla", "Hyper loop", "X(Twitter)", "Nvidia"],
+    answer: "Nvidia"
   },
   {
-    question: "What is the largest ocean on Earth?",
-    options: ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-    answer: "Pacific Ocean"
+    question: "3.Which indian state has highest gdp?",
+    options: ["Tamilnadu", "Karnataka", "Maharastra", "Kerala"],
+    answer: "Maharastra"
   },
   {
-    question: "Who wrote 'Romeo and Juliet'?",
-    options: ["Charles Dickens", "William Shakespeare", "Mark Twain", "Jane Austen"],
-    answer: "William Shakespeare"
+    question: "Which country is not a military power?",
+    options: ["India", "Russia", "China", "Nepal"],
+    answer: "Nepal"
+  },
+  {
+    question: "5.what is expanded form of IMF? ",
+    options:["A.International money Fund", "B. Indian money fund", "C.International monetary Fund", "D. International money function"],
+    answer: "C.International monetary Fund"
   }
 ];
 
@@ -56,8 +61,8 @@ export default function File() {
   };
 
   return (
-    <div className="App">
-      <h1>Quiz App</h1>
+    <div className="App mt-5 text-center">
+      <h1 className='bg-blue-500 text-center h-17 pb-1 w-50'>Quiz App</h1>
       {quizCompleted ? (
         <div>
           <h2>Your Score: {score} out of {questions.length}</h2>
@@ -78,7 +83,7 @@ export default function File() {
                 {option}
               </div>
             ))}
-            <button type="submit" disabled={!selectedOption}>Next</button>
+            <button type="submit" disabled={!selectedOption} className='text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'>Next</button>
           </form>
         </div>
       )}
