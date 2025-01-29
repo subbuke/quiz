@@ -62,15 +62,15 @@ export default function File() {
 
   return (
     <div className="App mt-5 text-center">
-      <h1 className='bg-blue-500 text-center h-17 pb-1 w-50'>Quiz App</h1>
+      <h1 className='bg-blue-500 text-center h-17 pb-1 w-30'>Quiz App</h1>
       {quizCompleted ? (
         <div>
           <h2>Your Score: {score} out of {questions.length}</h2>
-          <button onClick={restartQuiz}>Restart Quiz</button>
+          <button onClick={restartQuiz} className='text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'>Restart Quiz</button>
         </div>
       ) : (
         <div>
-          <h2>{questions[currentQuestionIndex].question}</h2>
+          <h2 className='text-4xl font-bold text-gray-900 dark:text-black'>{questions[currentQuestionIndex].question}</h2>
           <form onSubmit={handleSubmit}>
             {questions[currentQuestionIndex].options.map((option, index) => (
               <div key={index}>
@@ -79,11 +79,12 @@ export default function File() {
                   value={option}
                   checked={selectedOption === option}
                   onChange={handleOptionChange}
+        
                 />
                 {option}
               </div>
             ))}
-            <button type="submit" disabled={!selectedOption} className='text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'>Next</button>
+            <button type="submit" disabled={!selectedOption} className='text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2'>Next</button>
           </form>
         </div>
       )}
