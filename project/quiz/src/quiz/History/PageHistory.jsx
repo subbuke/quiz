@@ -1,23 +1,27 @@
 import { Grid, Card, CardContent, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-
 const Data = [
-  { CardTitle: "History", CardText: "Take a quiz about history and check your knowledge", path: "/History" },
-  { CardTitle: "Art", CardText: "Take a quiz about art and check your knowledge" },
-  { CardTitle: "Biology", CardText: "Take a quiz about Biology and check your knowledge" },
-  { CardTitle: "Chemistry", CardText: "Take a quiz about Chemistry and check your knowledge" },
-  { CardTitle: "Defence", CardText: "Take a quiz about Defence and check your knowledge" },
-  { CardTitle: "Economy", CardText: "Take a quiz about Economy and check your knowledge" },
-  { CardTitle: "Geopolitics", CardText: "Take a quiz about Geopolitics and check your knowledge" },
-  { CardTitle: "Literature", CardText: "Take a quiz about literature and check your knowledge" },
-  { CardTitle: "Physics", CardText: "Take a quiz about physics and check your knowledge" },
-  { CardTitle: "Space", CardText: "Take a quiz about space and check your knowledge" }
+  {
+    CardTitle: "History (Easy)",
+    CardText: "Take a quiz about history and check your knowledge",
+    path: "/History/EasyHistory",
+  },
+  {
+    CardTitle: "History (Medium)",
+    CardText: "Take a quiz about history and check your knowledge",
+    path: "/History/MedHistory",
+  },
+  {
+    CardTitle: "History (Hard)",
+    CardText: "Take a quiz about history and check your knowledge",
+    path: "/History/HardHistory",
+  },
 ];
 
-function Home() {
-
+function PageHistory() {
   const navigate = useNavigate();
+
   return (
     <>
       <Typography variant="h4" align="center" sx={{ mt: 3, mb: 4 }}>
@@ -54,4 +58,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default PageHistory;

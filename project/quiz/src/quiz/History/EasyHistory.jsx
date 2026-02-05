@@ -23,28 +23,28 @@ const questions = [
   {
     questionText: "3. Who discovered America in 1492?",
     questionAnswer: [
-      { text: "Russia", isCorrect: false },
-      { text: "India", isCorrect: false },
-      { text: "China", isCorrect: false },
-      { text: "USA", isCorrect: true }
+      { text: "A) Russia", isCorrect: false },
+      { text: "B) India", isCorrect: false },
+      { text: "C) China", isCorrect: false },
+      { text: "D) USA", isCorrect: true }
     ]
   },
   {
-    questionText: "what is the smallest city in the world..?",
+    questionText: "4.Which ancient civilization built the pyramids?",
     questionAnswer: [
-      { text: "sweden", isCorrect: false },
-      { text: "Norway", isCorrect: false },
-      { text: "vatican city", isCorrect: true },
-      { text: "belarus", isCorrect: false }
+      { text: "A) Romans", isCorrect: false },
+      { text: "B) Greeks", isCorrect: false },
+      { text: "C) Mayans", isCorrect: false },
+      { text: "D) Egyptians", isCorrect: true }
     ]
   },
   {
-    questionText: "Independence day of india..?",
+    questionText: "5. What do we call a period of 100 years?",
     questionAnswer: [
-      { text: "August 15", isCorrect: true },
-      { text: "may 15", isCorrect: false },
-      { text: "june 15", isCorrect: false },
-      { text: "july 15", isCorrect: false }
+      { text: "A) Millennium", isCorrect: false },
+      { text: "B) Millennium 15", isCorrect: false },
+      { text: "C) Era", isCorrect: false },
+      { text: "D) Century", isCorrect: true }
     ]
   }
 ]
