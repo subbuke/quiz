@@ -1,85 +1,108 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Page background */
+/* ---------- Global polish ---------- */
 body {
-  background-color: #f2f4f8;
-}
-
-/* Quiz container */
-.quiz {
-  max-width: 500px;
-  margin: 80px auto;
-  background-color: #ffffff;
-  padding: 25px 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(180deg, #f8fafc, #eef2ff);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 /* Title */
-.quiz h1 {
+.QuizTitle {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
+  margin: 2rem 0 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #111827;
 }
 
-/* Question text */
-.quiz > div > div {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #222;
+/* ---------- Card entrance animation ---------- */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-/* Options */
-.quiz button {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 2px solid #ddd;
-  border-radius: 6px;
-  background-color: #fafafa;
-  cursor: pointer;
-  font-size: 16px;
-  text-align: left;
-  transition: all 0.3s ease;
+/* ---------- MUI Card Enhancements ---------- */
+.MuiCard-root {
+  position: relative; /* REQUIRED for ::after */
+  border-radius: 18px !important;
+  animation: fadeUp 0.6s ease both;
+
+  transition:
+    transform 0.35s cubic-bezier(.4,0,.2,1),
+    box-shadow 0.35s cubic-bezier(.4,0,.2,1);
+
+  will-change: transform;
 }
 
-/* Hover effect */
-.quiz button:hover {
-  background-color: #e6f0ff;
-  border-color: #4a90e2;
+.MuiCard-root:hover {
+  transform: translate3d(0, -8px, 0) scale(1.015);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.14) !important;
 }
 
-/* Correct & wrong states (for later use) */
-.quiz button.correct {
-  background-color: #d4edda;
-  border-color: #28a745;
-  color: #155724;
+/* Soft gradient glow */
+.MuiCard-root::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.14),
+    rgba(236, 72, 153, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
 }
 
-.quiz button.wrong {
-  background-color: #f8d7da;
-  border-color: #dc3545;
-  color: #721c24;
-}
-.correct {
-  background-color: #d4edda;
-  border-color: #28a745;
-  color: #155724;
+.MuiCard-root:hover::after {
+  opacity: 1;
 }
 
-.wrong {
-  background-color: #f8d7da;
-  border-color: #dc3545;
-  color: #721c24;
+/* ---------- Card content ---------- */
+.MuiCardContent-root {
+  padding: 22px !important;
 }
 
-.score-section {
-  text-align: center;
+/* Title text */
+.MuiTypography-h6 {
+  font-weight: 600 !important;
+  color: #111827;
+}
+
+/* Body text */
+.MuiTypography-body2 {
+  line-height: 1.6 !important;
+  color: #4b5563;
+}
+
+/* ---------- Button polish ---------- */
+.MuiButton-contained {
+  border-radius: 12px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background-color 0.18s ease;
+}
+
+.MuiButton-contained:hover {
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.35);
+}
+
+.MuiButton-contained:active {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Keyboard accessibility */
+.MuiButton-contained:focus-visible {
+  outline: 3px solid rgba(99, 102, 241, 0.45);
+  outline-offset: 2px;
 }
