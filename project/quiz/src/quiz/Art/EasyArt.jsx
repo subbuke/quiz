@@ -3,53 +3,53 @@ import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What primary colors are used in painting??",
+    questionText: "1. What primary colors are used in painting?",
     questionAnswer: [
-      { text: "Cyan, Magenta, Yellow", isCorrect: false },
-      { text: "Red, Green, Blue", isCorrect: true },
-      { text: "Red, Blue, Yellow", isCorrect: false },
-      { text: "Orange, Green, Purple", isCorrect: false }
+      { text: "A) Red, Blue, Yellow", isCorrect: true },
+      { text: "B) Green, Orange, Purple", isCorrect: false },
+      { text: "C) Black, White, Gray", isCorrect: false },
+      { text: "D) Pink, Brown, Gold", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which famous artist painted the *Mona Lisa*??",
+    questionText: "2. Which famous artist painted the Mona Lisa?",
     questionAnswer: [
-      { text: "Trump", isCorrect: true },
-      { text: "Obama", isCorrect: false },
-      { text: "Putin", isCorrect: false },
-      { text: "Biden", isCorrect: false }
+      { text: "A) Pablo Picasso", isCorrect: false },
+      { text: "B) Vincent van Gogh", isCorrect: false },
+      { text: "C) Leonardo da Vinci", isCorrect: true },
+      { text: "D) Michelangelo", isCorrect: false }
     ]
   },
   {
-    questionText: "Most powerful military in the world?",
+    questionText: "3. What type of paint is made from pigment and water?",
     questionAnswer: [
-      { text: "Russia", isCorrect: false },
-      { text: "India", isCorrect: false },
-      { text: "China", isCorrect: false },
-      { text: "USA", isCorrect: true }
+      { text: "A) Oil paint", isCorrect: false },
+      { text: "B) Acrylic paint", isCorrect: false },
+      { text: "C) Watercolor", isCorrect: true },
+      { text: "D) Spray paint", isCorrect: false }
     ]
   },
   {
-    questionText: "what is the smallest city in the world..?",
+    questionText: "4. What is the art of folding paper into shapes called?",
     questionAnswer: [
-      { text: "sweden", isCorrect: false },
-      { text: "Norway", isCorrect: false },
-      { text: "vatican city", isCorrect: true },
-      { text: "belarus", isCorrect: false }
+      { text: "A) Calligraphy", isCorrect: false },
+      { text: "B) Origami", isCorrect: true },
+      { text: "C) Pottery", isCorrect: false },
+      { text: "D) Sculpture", isCorrect: false }
     ]
   },
   {
-    questionText: "Independence day of india..?",
+    questionText: "5. Which country is famous for ukiyo-e woodblock prints?",
     questionAnswer: [
-      { text: "August 15", isCorrect: true },
-      { text: "may 15", isCorrect: false },
-      { text: "june 15", isCorrect: false },
-      { text: "july 15", isCorrect: false }
+      { text: "A) China", isCorrect: false },
+      { text: "B) Korea", isCorrect: false },
+      { text: "C) Japan", isCorrect: true },
+      { text: "D) Thailand", isCorrect: false }
     ]
   }
 ]
 
-function Test() {
+function EasyArt() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function Test() {
   )
 }
 
-export default Test;
+export default EasyArt;

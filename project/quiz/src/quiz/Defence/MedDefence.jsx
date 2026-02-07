@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Defence.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "6. What does NATO stand for?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) North American Treaty Office", isCorrect: false },
+      { text: "B) National Army Treaty Organization", isCorrect: false },
+      { text: "C) North Atlantic Treaty Organization", isCorrect: true },
+      { text: "D) Northern Alliance Treaty Organization", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "7. Which naval vessel is the largest type of warship?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Destroyer", isCorrect: false },
+      { text: "B) Submarine", isCorrect: false },
+      { text: "C) Battleship", isCorrect: false },
+      { text: "D) Aircraft carrier", isCorrect: true }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "8. What is a sudden, coordinated military attack called?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Defense", isCorrect: false },
+      { text: "B) Patrol", isCorrect: false },
+      { text: "C) Blitzkrieg / Offensive", isCorrect: true },
+      { text: "D) Retreat", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "9. What is the primary purpose of military intelligence?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Training soldiers", isCorrect: false },
+      { text: "B) Weapon manufacturing", isCorrect: false },
+      { text: "C) Gathering information for strategic advantage", isCorrect: true },
+      { text: "D) Public relations", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "10. Which system intercepts and destroys incoming missiles?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Radar system", isCorrect: false },
+      { text: "B) Anti-ballistic missile (ABM) system", isCorrect: true },
+      { text: "C) Artillery system", isCorrect: false },
+      { text: "D) Satellite system", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function MedDefence() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default MedDefence;

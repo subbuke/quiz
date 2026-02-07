@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Chemistry.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "6. What is the atomic number of carbon?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) 4", isCorrect: false },
+      { text: "B) 6", isCorrect: true },
+      { text: "C) 8", isCorrect: false },
+      { text: "D) 12", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "7. Which element has the chemical symbol Na?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Nitrogen", isCorrect: false },
+      { text: "B) Sodium", isCorrect: true },
+      { text: "C) Neon", isCorrect: false },
+      { text: "D) Nickel", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "8. What type of bond involves sharing of electrons?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Ionic bond", isCorrect: false },
+      { text: "B) Metallic bond", isCorrect: false },
+      { text: "C) Covalent bond", isCorrect: true },
+      { text: "D) Hydrogen bond", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "9. What is the process of a solid turning directly into a gas called?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Evaporation", isCorrect: false },
+      { text: "B) Condensation", isCorrect: false },
+      { text: "C) Sublimation", isCorrect: true },
+      { text: "D) Melting", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "10. Who is known as the Father of the Periodic Table?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) John Dalton", isCorrect: false },
+      { text: "B) Antoine Lavoisier", isCorrect: false },
+      { text: "C) Dmitri Mendeleev", isCorrect: true },
+      { text: "D) Niels Bohr", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function MedChemistry() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default MedChemistry;

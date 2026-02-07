@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Chemistry.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "11. What is the molecular formula of ozone?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) O2", isCorrect: false },
+      { text: "B) O3", isCorrect: true },
+      { text: "C) CO3", isCorrect: false },
+      { text: "D) O4", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "12. What reaction produces salt and water from an acid and a base?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Oxidation", isCorrect: false },
+      { text: "B) Reduction", isCorrect: false },
+      { text: "C) Neutralization", isCorrect: true },
+      { text: "D) Combustion", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "13. What is the electron configuration of oxygen?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) 1s2 2s2 2p2", isCorrect: false },
+      { text: "B) 1s2 2s2 2p4", isCorrect: true },
+      { text: "C) 1s2 2s2 2p6", isCorrect: false },
+      { text: "D) 1s2 2s1 2p3", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "14. Which element has the highest electronegativity?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Oxygen", isCorrect: false },
+      { text: "B) Chlorine", isCorrect: false },
+      { text: "C) Fluorine", isCorrect: true },
+      { text: "D) Nitrogen", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "15. Which principle states that no two electrons have the same quantum numbers?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Aufbau Principle", isCorrect: false },
+      { text: "B) Hund’s Rule", isCorrect: false },
+      { text: "C) Pauli Exclusion Principle", isCorrect: true },
+      { text: "D) Heisenberg Principle", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function HardChemistry() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default HardChemistry;

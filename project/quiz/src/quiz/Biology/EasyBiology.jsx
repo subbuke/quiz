@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Biology.css"
 import { useState } from 'react'
 
 const questions = [
-  {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+   {
+    questionText: "1. What organ pumps blood through the human body?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) Brain", isCorrect: false },
+      { text: "B) Lungs", isCorrect: false },
+      { text: "C) Heart", isCorrect: true },
+      { text: "D) Kidney", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "2. What gas do plants absorb during photosynthesis?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Oxygen", isCorrect: false },
+      { text: "B) Nitrogen", isCorrect: false },
+      { text: "C) Carbon dioxide", isCorrect: true },
+      { text: "D) Hydrogen", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "3. How many legs does an insect have?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Four", isCorrect: false },
+      { text: "B) Six", isCorrect: true },
+      { text: "C) Eight", isCorrect: false },
+      { text: "D) Ten", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "4. Which part of the plant is mainly responsible for photosynthesis?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Root", isCorrect: false },
+      { text: "B) Stem", isCorrect: false },
+      { text: "C) Leaf", isCorrect: true },
+      { text: "D) Flower", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "5. What do we call animals that eat only plants?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Carnivores", isCorrect: false },
+      { text: "B) Omnivores", isCorrect: false },
+      { text: "C) Herbivores", isCorrect: true },
+      { text: "D) Insectivores", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function EasyBiology() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default EasyBiology;

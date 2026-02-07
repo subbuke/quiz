@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Defence.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "1. What is the main role of the army?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) Entertainment", isCorrect: false },
+      { text: "B) Trade and commerce", isCorrect: false },
+      { text: "C) To protect the country and its citizens", isCorrect: true },
+      { text: "D) Education", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "2. Which country has the largest military by active personnel?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) United States", isCorrect: false },
+      { text: "B) Russia", isCorrect: false },
+      { text: "C) India", isCorrect: false },
+      { text: "D) China", isCorrect: true }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "3. What vehicle is heavily armored and used in land combat?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Jeep", isCorrect: false },
+      { text: "B) Tank", isCorrect: true },
+      { text: "C) Helicopter", isCorrect: false },
+      { text: "D) Submarine", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "4. Which part of the military operates aircraft?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Army", isCorrect: false },
+      { text: "B) Navy", isCorrect: false },
+      { text: "C) Air Force", isCorrect: true },
+      { text: "D) Marines", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "5. What do we call a place where soldiers live and train?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Academy", isCorrect: false },
+      { text: "B) Base / Barracks", isCorrect: true },
+      { text: "C) Airport", isCorrect: false },
+      { text: "D) Campground", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function EasyDefence() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default EasyDefence;

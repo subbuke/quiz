@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Chemistry.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "1. What is the chemical symbol for water?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) H2O", isCorrect: true },
+      { text: "B) O2", isCorrect: false },
+      { text: "C) CO2", isCorrect: false },
+      { text: "D) HO", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "2. What is the chemical symbol for gold?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Ag", isCorrect: false },
+      { text: "B) Au", isCorrect: true },
+      { text: "C) Gd", isCorrect: false },
+      { text: "D) Go", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "3. What is the most abundant gas in Earth’s atmosphere?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Oxygen", isCorrect: false },
+      { text: "B) Carbon dioxide", isCorrect: false },
+      { text: "C) Nitrogen", isCorrect: true },
+      { text: "D) Hydrogen", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "4. What do you call a substance made of only one type of atom?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Compound", isCorrect: false },
+      { text: "B) Mixture", isCorrect: false },
+      { text: "C) Element", isCorrect: true },
+      { text: "D) Molecule", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "5. What is the pH of pure water?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) 0", isCorrect: false },
+      { text: "B) 5", isCorrect: false },
+      { text: "C) 7", isCorrect: true },
+      { text: "D) 14", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function EasyChemistry() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default EasyChemistry;

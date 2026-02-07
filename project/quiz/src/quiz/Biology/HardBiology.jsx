@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Biology.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "11. What molecule carries genetic information?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) RNA", isCorrect: false },
+      { text: "B) Protein", isCorrect: false },
+      { text: "C) DNA", isCorrect: true },
+      { text: "D) Lipid", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "12. Which organelle is known as the powerhouse of the cell?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Nucleus", isCorrect: false },
+      { text: "B) Ribosome", isCorrect: false },
+      { text: "C) Mitochondria", isCorrect: true },
+      { text: "D) Golgi apparatus", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "13. What process divides a cell into two identical cells?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Meiosis", isCorrect: false },
+      { text: "B) Mitosis", isCorrect: true },
+      { text: "C) Fertilization", isCorrect: false },
+      { text: "D) Diffusion", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "14. Which system controls hormones in the body?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Nervous system", isCorrect: false },
+      { text: "B) Digestive system", isCorrect: false },
+      { text: "C) Endocrine system", isCorrect: true },
+      { text: "D) Respiratory system", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "15. What term describes a stable internal environment?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Adaptation", isCorrect: false },
+      { text: "B) Evolution", isCorrect: false },
+      { text: "C) Homeostasis", isCorrect: true },
+      { text: "D) Metabolism", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function HardBiology() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default HardBiology;

@@ -1,23 +1,27 @@
 import { Grid, Card, CardContent, Typography, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
-
 const Data = [
-  { CardTitle: "History", CardText: "Take a quiz about history and check your knowledge", path: "/History" },
-  { CardTitle: "Art", CardText: "Take a quiz about art and check your knowledge", path:"/Art" },
-  { CardTitle: "Biology", CardText: "Take a quiz about Biology and check your knowledge", path:"/Biology" },
-  { CardTitle: "Chemistry", CardText: "Take a quiz about Chemistry and check your knowledge", path:"/Chemistry" },
-  { CardTitle: "Defence", CardText: "Take a quiz about Defence and check your knowledge", path:"/Defence" },
-  { CardTitle: "Economy", CardText: "Take a quiz about Economy and check your knowledge", path:"/Economy" },
-  { CardTitle: "Geopolitics", CardText: "Take a quiz about Geopolitics and check your knowledge", path:"/Geopolitics" },
-  { CardTitle: "Literature", CardText: "Take a quiz about literature and check your knowledge", path:"/Literature" },
-  { CardTitle: "Physics", CardText: "Take a quiz about physics and check your knowledge", path:"/Physics" },
-  { CardTitle: "Space", CardText: "Take a quiz about space and check your knowledge", path:"/Space" }
+  {
+    CardTitle: "Defence (Easy)",
+    CardText: "Take a quiz about Defence and check your knowledge",
+    path: "/Defence/EasyDefence",
+  },
+  {
+    CardTitle: "Defence (Medium)",
+    CardText: "Take a quiz about Defence and check your knowledge",
+    path: "/Defence/MedDefence",
+  },
+  {
+    CardTitle: "Defence (Hard)",
+    CardText: "Take a quiz about Defence and check your knowledge",
+    path: "/Defence/HardDefence",
+  },
 ];
 
-function Home() {
-
+function PageDefence() {
   const navigate = useNavigate();
+
   return (
     <>
       <Typography variant="h4" align="center" sx={{ mt: 3, mb: 4 }}>
@@ -54,4 +58,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default PageDefence;

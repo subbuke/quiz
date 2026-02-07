@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Biology.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "6. What is the basic unit of life?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) Tissue", isCorrect: false },
+      { text: "B) Organ", isCorrect: false },
+      { text: "C) Cell", isCorrect: true },
+      { text: "D) Molecule", isCorrect: false }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "7. Which blood cells help fight infections?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Red blood cells", isCorrect: false },
+      { text: "B) Platelets", isCorrect: false },
+      { text: "C) White blood cells", isCorrect: true },
+      { text: "D) Plasma", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "8. What process do cells use to make energy from food?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Photosynthesis", isCorrect: false },
+      { text: "B) Digestion", isCorrect: false },
+      { text: "C) Respiration", isCorrect: false },
+      { text: "D) Cellular respiration", isCorrect: true }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "9. What pigment gives plants their green color?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Melanin", isCorrect: false },
+      { text: "B) Chlorophyll", isCorrect: true },
+      { text: "C) Carotene", isCorrect: false },
+      { text: "D) Hemoglobin", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "10. What type of blood vessel carries blood away from the heart?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Veins", isCorrect: false },
+      { text: "B) Capillaries", isCorrect: false },
+      { text: "C) Arteries", isCorrect: true },
+      { text: "D) Venules", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function MedBiology() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default MedBiology;

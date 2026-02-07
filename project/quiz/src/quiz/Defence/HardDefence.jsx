@@ -1,55 +1,55 @@
-import "./Text.css"
+import "./Defence.css"
 import { useState } from 'react'
 
 const questions = [
   {
-    questionText: "1. What art movement is Vincent van Gogh associated with?",
+    questionText: "11. Which treaty limits the spread of nuclear weapons?",
     questionAnswer: [
-      { text: "A) Impressionism", isCorrect: false },
-      { text: "B) Cubism", isCorrect: false },
-      { text: "C) Post-Impressionism", isCorrect: true },
-      { text: "D) Surrealism", isCorrect: false }
+      { text: "A) Geneva Convention", isCorrect: false },
+      { text: "B) SALT Treaty", isCorrect: false },
+      { text: "C) Nuclear Test Ban Treaty", isCorrect: false },
+      { text: "D) Nuclear Non-Proliferation Treaty (NPT)", isCorrect: true }
     ]
   },
   {
-    questionText: "2. Which French artist is known for painting water lilies?",
+    questionText: "12. Which country first developed nuclear weapons?",
     questionAnswer: [
-      { text: "A) Claude Monet", isCorrect: true },
-      { text: "B) Edgar Degas", isCorrect: false },
-      { text: "C) Paul Cézanne", isCorrect: false },
-      { text: "D) Henri Matisse", isCorrect: false }
+      { text: "A) Germany", isCorrect: false },
+      { text: "B) Soviet Union", isCorrect: false },
+      { text: "C) United States", isCorrect: true },
+      { text: "D) United Kingdom", isCorrect: false }
     ]
   },
   {
-    questionText: "3. What is a painting done on wet plaster called?",
+    questionText: "13. What are unmanned aerial vehicles commonly called?",
     questionAnswer: [
-      { text: "A) Mosaic", isCorrect: false },
-      { text: "B) Fresco", isCorrect: true },
-      { text: "C) Canvas", isCorrect: false },
-      { text: "D) Engraving", isCorrect: false }
+      { text: "A) Jets", isCorrect: false },
+      { text: "B) Satellites", isCorrect: false },
+      { text: "C) Drones (UAVs)", isCorrect: true },
+      { text: "D) Missiles", isCorrect: false }
     ]
   },
   {
-    questionText: "4. Who painted the ceiling of the Sistine Chapel?",
+    questionText: "14. Who wrote the military theory book 'On War'?",
     questionAnswer: [
-      { text: "A) Raphael", isCorrect: false },
-      { text: "B) Leonardo da Vinci", isCorrect: false },
-      { text: "C) Michelangelo", isCorrect: true },
-      { text: "D) Donatello", isCorrect: false }
+      { text: "A) Sun Tzu", isCorrect: false },
+      { text: "B) Napoleon Bonaparte", isCorrect: false },
+      { text: "C) Carl von Clausewitz", isCorrect: true },
+      { text: "D) Alexander the Great", isCorrect: false }
     ]
   },
   {
-    questionText: "5. What term describes three-dimensional artwork?",
+    questionText: "15. What doctrine prevents war through threat of retaliation?",
     questionAnswer: [
-      { text: "A) Painting", isCorrect: false },
-      { text: "B) Drawing", isCorrect: false },
-      { text: "C) Sculpture", isCorrect: true },
-      { text: "D) Sketch", isCorrect: false }
+      { text: "A) Expansionism", isCorrect: false },
+      { text: "B) Deterrence", isCorrect: true },
+      { text: "C) Isolationism", isCorrect: false },
+      { text: "D) Neutrality", isCorrect: false }
     ]
   }
 ]
 
-function MedArt() {
+function HardDefence() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -130,4 +130,4 @@ function MedArt() {
   )
 }
 
-export default MedArt;
+export default HardDefence;
