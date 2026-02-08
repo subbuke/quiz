@@ -21,6 +21,11 @@ import PageDefence from './quiz/Defence/PageDefence'
 import EasyDefence from './quiz/Defence/EasyDefence'
 import MedDefence from './quiz/Defence/MedDefence'
 import HardDefence from './quiz/Defence/HardDefence'
+import PageEconomy from './quiz/Economy/PageEconomy'
+import EasyEconomy from './quiz/Economy/EasyEconomy'
+import MedEconomy from './quiz/Economy/MedEconomy'
+import HardEconomy from './quiz/Economy/HardEconomy'
+
 
 function App() {
   
@@ -50,6 +55,10 @@ function App() {
         <Route path='/Defence/EasyDefence' element={<EasyDefence />} />
         <Route path='/Defence/MedDefence' element={<MedDefence />} />
         <Route path='/Defence/HardDefence' element={<HardDefence />} />
+        <Route path='/Economy' element={<PageEconomy />} />
+        <Route path='/Economy/EasyEconomy' element={<EasyEconomy />} />
+        <Route path='/Economy/MedEconomy' element={<MedEconomy />} />
+        <Route path='/Economy/HardEconomy' element={<HardEconomy />} />
       </Routes>
      </BrowserRouter>
     </div>
