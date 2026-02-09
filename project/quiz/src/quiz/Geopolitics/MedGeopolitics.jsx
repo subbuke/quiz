@@ -1,11 +1,55 @@
-import "./Text.css"
+import "./Geopolitics.css"
 import { useState } from 'react'
 
 const questions = [
-  
+  {
+    questionText: "6. What military alliance includes the US and many European countries?",
+    questionAnswer: [
+      { text: "A) UN", isCorrect: false },
+      { text: "B) ASEAN", isCorrect: false },
+      { text: "C) NATO", isCorrect: true },
+      { text: "D) SAARC", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "7. Which country is the most populous in the world?",
+    questionAnswer: [
+      { text: "A) India", isCorrect: false },
+      { text: "B) United States", isCorrect: false },
+      { text: "C) China", isCorrect: true },
+      { text: "D) Indonesia", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "8. What waterway connects the Mediterranean Sea to the Red Sea?",
+    questionAnswer: [
+      { text: "A) Panama Canal", isCorrect: false },
+      { text: "B) Strait of Hormuz", isCorrect: false },
+      { text: "C) Suez Canal", isCorrect: true },
+      { text: "D) Bosphorus Strait", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "9. What term describes influencing other countries without force?",
+    questionAnswer: [
+      { text: "A) Hard power", isCorrect: false },
+      { text: "B) Soft power", isCorrect: true },
+      { text: "C) Sanctions", isCorrect: false },
+      { text: "D) Militarism", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "10. Which international court is located in The Hague?",
+    questionAnswer: [
+      { text: "A) International Criminal Court", isCorrect: false },
+      { text: "B) World Trade Organization", isCorrect: false },
+      { text: "C) International Court of Justice", isCorrect: true },
+      { text: "D) European Court of Justice", isCorrect: false }
+    ]
+  }
 ]
 
-function Test() {
+function MedGeopolitics() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -86,4 +130,4 @@ function Test() {
   )
 }
 
-export default Test;
+export default MedGeopolitics;

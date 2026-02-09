@@ -1,11 +1,55 @@
-import "./Text.css"
+import "./Space.css"
 import { useState } from 'react'
 
 const questions = [
-  
+   {
+    questionText: "6. What is the largest planet in our solar system?",
+    questionAnswer: [
+      { text: "A) Earth", isCorrect: false },
+      { text: "B) Saturn", isCorrect: false },
+      { text: "C) Jupiter", isCorrect: true },
+      { text: "D) Neptune", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "7. Which planet has a prominent ring system?",
+    questionAnswer: [
+      { text: "A) Jupiter", isCorrect: false },
+      { text: "B) Saturn", isCorrect: true },
+      { text: "C) Uranus", isCorrect: false },
+      { text: "D) Neptune", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "8. What type of celestial body is the Sun?",
+    questionAnswer: [
+      { text: "A) Planet", isCorrect: false },
+      { text: "B) Star", isCorrect: true },
+      { text: "C) Asteroid", isCorrect: false },
+      { text: "D) Galaxy", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "9. What is a star’s sudden explosion at the end of its life called?",
+    questionAnswer: [
+      { text: "A) Nova", isCorrect: false },
+      { text: "B) Supernova", isCorrect: true },
+      { text: "C) Black hole", isCorrect: false },
+      { text: "D) Pulsar", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "10. What do astronomers call a small icy body that orbits the Sun?",
+    questionAnswer: [
+      { text: "A) Meteor", isCorrect: false },
+      { text: "B) Asteroid", isCorrect: false },
+      { text: "C) Comet", isCorrect: true },
+      { text: "D) Satellite", isCorrect: false }
+    ]
+  }
 ]
 
-function Test() {
+function MedSpace() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -86,4 +130,4 @@ function Test() {
   )
 }
 
-export default Test;
+export default MedSpace;

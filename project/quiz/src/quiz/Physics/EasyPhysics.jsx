@@ -1,11 +1,55 @@
-import "./Text.css"
+import "./Physics.css"
 import { useState } from 'react'
 
 const questions = [
-  
+  {
+    questionText: "1. What is the force that pulls objects toward the Earth?",
+    questionAnswer: [
+      { text: "A) Magnetism", isCorrect: false },
+      { text: "B) Gravity", isCorrect: true },
+      { text: "C) Friction", isCorrect: false },
+      { text: "D) Pressure", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "2. What is the SI unit of mass?",
+    questionAnswer: [
+      { text: "A) Gram", isCorrect: false },
+      { text: "B) Kilogram", isCorrect: true },
+      { text: "C) Newton", isCorrect: false },
+      { text: "D) Meter", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "3. Which planet has the strongest gravitational pull in the solar system?",
+    questionAnswer: [
+      { text: "A) Earth", isCorrect: false },
+      { text: "B) Saturn", isCorrect: false },
+      { text: "C) Jupiter", isCorrect: true },
+      { text: "D) Mars", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "4. What type of energy is stored in a stretched spring?",
+    questionAnswer: [
+      { text: "A) Kinetic energy", isCorrect: false },
+      { text: "B) Chemical energy", isCorrect: false },
+      { text: "C) Elastic potential energy", isCorrect: true },
+      { text: "D) Thermal energy", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "5. What device measures temperature?",
+    questionAnswer: [
+      { text: "A) Barometer", isCorrect: false },
+      { text: "B) Thermometer", isCorrect: true },
+      { text: "C) Ammeter", isCorrect: false },
+      { text: "D) Voltmeter", isCorrect: false }
+    ]
+  }
 ]
 
-function Test() {
+function EasyPhysics() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -86,4 +130,4 @@ function Test() {
   )
 }
 
-export default Test;
+export default EasyPhysics;

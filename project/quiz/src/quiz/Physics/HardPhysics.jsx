@@ -1,11 +1,55 @@
-import "./Text.css"
+import "./Physics.css"
 import { useState } from 'react'
 
 const questions = [
-  
+  {
+    questionText: "11. What principle explains why ships float?",
+    questionAnswer: [
+      { text: "A) Pascal’s Principle", isCorrect: false },
+      { text: "B) Bernoulli’s Principle", isCorrect: false },
+      { text: "C) Archimedes’ Principle", isCorrect: true },
+      { text: "D) Newton’s Law", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "12. What is the energy of motion called?",
+    questionAnswer: [
+      { text: "A) Potential energy", isCorrect: false },
+      { text: "B) Thermal energy", isCorrect: false },
+      { text: "C) Kinetic energy", isCorrect: true },
+      { text: "D) Chemical energy", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "13. What phenomenon occurs when light bends while passing through different mediums?",
+    questionAnswer: [
+      { text: "A) Reflection", isCorrect: false },
+      { text: "B) Diffraction", isCorrect: false },
+      { text: "C) Refraction", isCorrect: true },
+      { text: "D) Dispersion", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "14. What particle is exchanged in electromagnetic interactions?",
+    questionAnswer: [
+      { text: "A) Electron", isCorrect: false },
+      { text: "B) Proton", isCorrect: false },
+      { text: "C) Photon", isCorrect: true },
+      { text: "D) Neutron", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "15. Who proposed the uncertainty principle?",
+    questionAnswer: [
+      { text: "A) Albert Einstein", isCorrect: false },
+      { text: "B) Niels Bohr", isCorrect: false },
+      { text: "C) Werner Heisenberg", isCorrect: true },
+      { text: "D) Max Planck", isCorrect: false }
+    ]
+  }
 ]
 
-function Test() {
+function HardPhysics() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -86,4 +130,4 @@ function Test() {
   )
 }
 
-export default Test;
+export default HardPhysics;

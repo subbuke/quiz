@@ -3,23 +3,23 @@ import { useNavigate } from "react-router-dom";
 
 const Data = [
   {
-    CardTitle: "Economy (Easy)",
-    CardText: "Take a quiz about Economy and check your knowledge",
-    path: "/Economy/EasyEconomy",
+    CardTitle: "Geopolitics (Easy)",
+    CardText: "Take a quiz about Geopolitics and check your knowledge",
+    path: "/Geopolitics/EasyGeopolitics",
   },
   {
-    CardTitle: "Economy (Medium)",
-    CardText: "Take a quiz about Economy and check your knowledge",
-    path: "/Economy/MedEconomy",
+    CardTitle: "Geopolitics (Medium)",
+    CardText: "Take a quiz about Geopolitics and check your knowledge",
+    path: "/Geopolitics/MedGeopolitics",
   },
   {
-    CardTitle: "Economy (Hard)",
-    CardText: "Take a quiz about Economy and check your knowledge",
-    path: "/Economy/HardEconomy",
+    CardTitle: "Geopolitics (Hard)",
+    CardText: "Take a quiz about Geopolitics and check your knowledge",
+    path: "/Geopolitics/HardGeopolitics",
   },
 ];
 
-function PageEconomy() {
+function PageGeopolitics() {
   const navigate = useNavigate();
 
   return (
@@ -58,4 +58,4 @@ function PageEconomy() {
   );
 }
 
-export default PageEconomy;
+export default PageGeopolitics;

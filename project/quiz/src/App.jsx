@@ -25,6 +25,22 @@ import PageEconomy from './quiz/Economy/PageEconomy'
 import EasyEconomy from './quiz/Economy/EasyEconomy'
 import MedEconomy from './quiz/Economy/MedEconomy'
 import HardEconomy from './quiz/Economy/HardEconomy'
+import PageGeopolitics from './quiz/Geopolitics/PageGeopolitics'
+import EasyGeopolitics from './quiz/Geopolitics/EasyGeopolitics'
+import MedGeopolitics from './quiz/Geopolitics/MedGeopolitics'
+import HardGeopolitics from './quiz/Geopolitics/HardGeopolitics'
+import PageLiterature from './quiz/Literature/PageLiterature'
+import EasyLiterature from './quiz/Literature/EasyLiterature'
+import MedLiterature from './quiz/Literature/MedLiterature'
+import HardLiterature from './quiz/Literature/HardLiterature'
+import PagePhysics from './quiz/Physics/PagePhysics'
+import EasyPhysics from './quiz/Physics/EasyPhysics'
+import MedPhysics from './quiz/Physics/MedPhysics'
+import HardPhysics from './quiz/Physics/HardPhysics'
+import PageSpace from './quiz/Space/PageSpace'
+import EasySpace from './quiz/Space/EasySpace'
+import MedSpace from './quiz/Space/MedSpace'
+import HardSpace from './quiz/Space/HardSpace'
 
 
 function App() {
@@ -59,6 +75,22 @@ function App() {
         <Route path='/Economy/EasyEconomy' element={<EasyEconomy />} />
         <Route path='/Economy/MedEconomy' element={<MedEconomy />} />
         <Route path='/Economy/HardEconomy' element={<HardEconomy />} />
+        <Route path='/Geopolitics' element={<PageGeopolitics />} />
+        <Route path='/Geopolitics/EasyGeopolitics' element={<EasyGeopolitics />} />
+        <Route path='/Geopolitics/MedGeopolitics' element={<MedGeopolitics />} />
+        <Route path='/Geopolitics/HardGeopolitics' element={<HardGeopolitics />} />
+        <Route path='/Literature' element={<PageLiterature />} />
+        <Route path='/Literature/EasyLiterature' element={<EasyLiterature />} />
+        <Route path='/Literature/MedLiterature' element={<MedLiterature />} />
+        <Route path='/Literature/HardLiterature' element={<HardLiterature />} />
+        <Route path='/Physics' element={<PagePhysics />} />
+        <Route path='/Physics/EasyPhysics' element={<EasyPhysics />} />
+        <Route path='/Physics/MedPhysics' element={<MedPhysics />} />
+        <Route path='/Physics/HardPhysics' element={<HardPhysics />} />
+        <Route path='/Space' element={<PageSpace />} />
+        <Route path='/Space/EasySpace' element={<EasySpace />} />
+        <Route path='/Space/MedSpace' element={<MedSpace />} />
+        <Route path='/Space/HardSpace' element={<HardSpace />} />
       </Routes>
      </BrowserRouter>
     </div>

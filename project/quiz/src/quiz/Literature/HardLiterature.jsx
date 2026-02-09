@@ -1,11 +1,55 @@
-import "./Text.css"
+import "./Literature.css"
 import { useState } from 'react'
 
 const questions = [
-  
+  {
+    questionText: "11. Who is considered the father of modern detective fiction?",
+    questionAnswer: [
+      { text: "A) Arthur Conan Doyle", isCorrect: false },
+      { text: "B) Edgar Allan Poe", isCorrect: true },
+      { text: "C) Agatha Christie", isCorrect: false },
+      { text: "D) Raymond Chandler", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "12. What narrative technique shows a character’s thoughts as they occur?",
+    questionAnswer: [
+      { text: "A) Flashback", isCorrect: false },
+      { text: "B) Stream of consciousness", isCorrect: true },
+      { text: "C) Foreshadowing", isCorrect: false },
+      { text: "D) Irony", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "13. Who wrote Crime and Punishment?",
+    questionAnswer: [
+      { text: "A) Leo Tolstoy", isCorrect: false },
+      { text: "B) Anton Chekhov", isCorrect: false },
+      { text: "C) Fyodor Dostoevsky", isCorrect: true },
+      { text: "D) Ivan Turgenev", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "14. What is a story within a story called?",
+    questionAnswer: [
+      { text: "A) Allegory", isCorrect: false },
+      { text: "B) Parable", isCorrect: false },
+      { text: "C) Frame story", isCorrect: true },
+      { text: "D) Satire", isCorrect: false }
+    ]
+  },
+  {
+    questionText: "15. Who wrote Waiting for Godot?",
+    questionAnswer: [
+      { text: "A) Harold Pinter", isCorrect: false },
+      { text: "B) Eugene O’Neill", isCorrect: false },
+      { text: "C) Samuel Beckett", isCorrect: true },
+      { text: "D) Bertolt Brecht", isCorrect: false }
+    ]
+  }
 ]
 
-function Test() {
+function HardLiterature() {
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
@@ -86,4 +130,4 @@ function Test() {
   )
 }
 
-export default Test;
+export default HardLiterature;
