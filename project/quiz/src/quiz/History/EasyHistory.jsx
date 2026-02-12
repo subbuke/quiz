@@ -23,10 +23,10 @@ const questions = [
   {
     questionText: "3. Who discovered America in 1492?",
     questionAnswer: [
-      { text: "A) Russia", isCorrect: false },
-      { text: "B) India", isCorrect: false },
-      { text: "C) China", isCorrect: false },
-      { text: "D) USA", isCorrect: true }
+      { text: "A) Vasco da Gama", isCorrect: false },
+      { text: "B) Christopher Columbus", isCorrect: true },
+      { text: "C) Ferdinand Magellan", isCorrect: false },
+      { text: "D) Marco Polo", isCorrect: false }
     ]
   },
   {
